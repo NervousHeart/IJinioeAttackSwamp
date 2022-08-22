@@ -9,7 +9,7 @@ public class Uzi : Weapon
     {
         for (int i = 0; i < _countBullet; i++)
         {
-            Instantiate(Bullet, shootPoint.position + new Vector3(shootPoint.position.x + i, 0), Quaternion.identity);
+            Instantiate(Bullet, shootPoint.position + new Vector3(i, 0), Quaternion.identity);
         }
     }
 }
